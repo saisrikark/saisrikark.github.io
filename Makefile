@@ -1,7 +1,19 @@
-.PHONY: run start
+.PHONY: build deploy install lins start test
 
-run:
+build:
+    @npm run build
+
+deploy:
 	@npm run deploy
+
+install:
+    @npm install
+
+lint:
+    @npm run lint
 
 start:
 	@npm start
+
+test:
+    @npm test
