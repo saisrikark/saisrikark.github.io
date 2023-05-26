@@ -1,7 +1,7 @@
-.PHONY run
-
-start:
-	@npm start
+.PHONY: run start
 
 run:
 	@npm run deploy
+
+start:
+	@npm start
