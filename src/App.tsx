@@ -1,16 +1,11 @@
 import './App.css';
 import vibingKoti from './vibing_koti.gif'
+import { motion } from "framer-motion"; 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={vibingKoti} className="App-logo" alt="logo" />
-        <p>
-          Hey there 👋<br></br>
-          This website is under development 🦺 <br></br>
-        </p>
-      </header>
+      <img src={vibingKoti} className='VibingKoti' alt='VibingKoti'></img>
     </div>
   );
 }
