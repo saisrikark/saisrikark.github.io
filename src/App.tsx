@@ -1,15 +1,12 @@
 import './App.css';
+import Navbar from './Navbar';
+import Router from './Router';
 
 function App() {
   return (
     <div className="App">
-      <div className='SpiritualText'>
-        <p>
-        ॐ भद्रं नो अपिवातय मनः <br></br>
-        O Mind! May you bring about auspiciousness for us. <br></br>
-        -Ṛgveda-X.20.1
-        </p>
-      </div>
+      <Navbar></Navbar>
+      <Router></Router>
     </div>
   );
 }
