@@ -1,16 +1,15 @@
 import './App.css';
-import vibingKoti from './vibing_koti.gif'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={vibingKoti} className="App-logo" alt="logo" />
+      <div className='SpiritualText'>
         <p>
-          Hey there 👋<br></br>
-          This website is under development 🦺 <br></br>
+        ॐ भद्रं नो अपिवातय मनः <br></br>
+        O Mind! May you bring about auspiciousness for us. <br></br>
+        -Ṛgveda-X.20.1
         </p>
-      </header>
+      </div>
     </div>
   );
 }
