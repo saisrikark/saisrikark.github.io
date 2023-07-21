@@ -5,7 +5,13 @@ import { motion } from "framer-motion";
 function App() {
   return (
     <div className="App">
-      <img src={vibingKoti} className='VibingKoti' alt='VibingKoti'></img>
+      <div className='SpiritualText'>
+        <p>
+        ॐ भद्रं नो अपिवातय मनः <br></br>
+        O Mind! May you bring about auspiciousness for us. <br></br>
+        -Ṛgveda-X.20.1
+        </p>
+      </div>
     </div>
   );
 }
