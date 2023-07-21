@@ -1,0 +1,19 @@
+.Navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.Navbar a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.Navbar a:hover {
+    background-color: #111;
+    transition: background-color 2000ms linear;
+}
