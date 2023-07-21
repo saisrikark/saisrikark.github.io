@@ -1,6 +1,4 @@
 import './App.css';
-import vibingKoti from './vibing_koti.gif'
-import { motion } from "framer-motion"; 
 
 function App() {
   return (
