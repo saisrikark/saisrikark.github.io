@@ -6,11 +6,17 @@
     background-color: #333;
 }
 
-.Navbar a {
+.Navbar li {
     display: block;
     padding: 10px;
     color: white;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.Navbar li:hover {
+    color: grey;
+    transition: color 1s;
 }
 
 .Navbar a:hover {
