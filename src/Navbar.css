@@ -3,7 +3,7 @@
     display: flex;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: #080808;
 }
 
 .Navbar li {
@@ -15,11 +15,7 @@
 }
 
 .Navbar li:hover {
-    color: grey;
-    transition: color 1s;
+    background-color: #0f1518;
+    transition: background-color 1s;
 }
 
-.Navbar a:hover {
-    background-color: #111;
-    transition: background-color 2000ms linear;
-}
