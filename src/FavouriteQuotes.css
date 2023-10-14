@@ -4,11 +4,21 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 30%;
+  width: 40%;
   height: 20%;
   background-color: #FAF9F6;
   border: 10px solid transparent;
   border-image: linear-gradient(to bottom, #FAF9F6, transparent);
   border-image-slice: 1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for depth */
+}
+
+.Navigate {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 40%;
+  height: 5%;
 }

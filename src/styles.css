@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(241, 241, 241);
+    transition: background-color 1000ms ease-in;
+    margin:0px;
+    height:100%;
+}
+
+body.dark {
+    background-color: rgb(51, 51, 51);
+    transition: background-color 1000ms ease-in;
+    margin:0px;
+    height:100%;
+}
+
+.navbar {
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+  
+.left-elements,
+.right-elements {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+  
+.left-elements li {
+    margin-right: 20px;
+}
+
+.right-elements li {
+    margin-right: 10px;
+}
+  
+.left-elements a,
+.right-elements a {
+    text-decoration: none;
+    color: white;
+}

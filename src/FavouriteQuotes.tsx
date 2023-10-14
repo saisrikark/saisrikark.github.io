@@ -1,13 +1,17 @@
 import "./FavouriteQuotes.css"
 import React, {useState} from "react";
 
+import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
+
 const quotes = [
     <div>
         <p>
             ॐ भद्रं नो अपिवातय मनः <br></br>
             O Mind! May you bring about auspiciousness for us. <br></br>
             <br></br>
-            -Ṛgveda-X.20.1 
+            - Ṛgveda-X.20.1 
         </p> 
     </div>,
     <div>
@@ -17,36 +21,97 @@ const quotes = [
             Words are secondary. <br></br>
             Thoughts live; they travel far. <br></br>
             <br></br>
-            -Swami Vivekananda
+            - Swami Vivekananda
         </p> 
-    </div>
+    </div>,
+    <div>
+        <p>
+            The world is the great gymnasium where we come to make ourselves strong. <br></br>
+            <br></br>
+            - Swami Vivekananda
+        </p> 
+    </div>,
+    <div>
+        <p>
+            We suffer more in imagination than in reality. <br></br>
+            <br></br>
+            - Seneca
+        </p> 
+    </div>,
+    <div>
+        <p>
+            Easy choices, hard life. <br></br>
+            Hard choices, easy life. <br></br>
+            <br></br>
+            - Jerzy Gregorek
+        </p> 
+    </div>,
+    <div>
+        <p>
+            Focus is a matter of deciding what things you're not going to do. <br></br>
+            <br></br>
+            - John Carmack
+        </p> 
+    </div>,
+    <div>
+        <p>
+        Focused, hard work is the real key to success. <br></br>
+        Keep your eyes on the goal, and just keep taking the next step towards completing it. <br></br>
+        If you aren't sure which way to do something, do it both ways and see which works better. <br></br>
+        <br></br>
+        - John Carmack
+        </p> 
+    </div>,
+    <div>
+        <p>
+        To live is to suffer, to survive is to find some meaning in the suffering. <br></br>
+        <br></br>
+        -  Friedrich Nietzsche 
+        </p> 
+    </div>,
+    <div>
+        <p>
+        That which does not kill us makes us stronger. <br></br>
+        <br></br>
+        -  Friedrich Nietzsche 
+        </p> 
+    </div>,
 ]
 
 function Quote(props: {index: number}): React.ReactElement {
-    return quotes[props.index];
+    let quote = quotes[props.index]
+    return quote;
 }
 
-export default function FavouriteQuotes() {
+function FavouriteQuotes() {
     const [activeIndex, setActiveIndex] = useState(0);
-
     const handlePrevClick = () => {
-        if (activeIndex > 0) {
+        if ((activeIndex - 1) < 0) {
+            setActiveIndex(quotes.length - 1);
+        } else {
             setActiveIndex(activeIndex - 1);
         }
     }
 
     const handleNextClick = () => {
-        const totalItems = quotes.length
-        if (activeIndex < totalItems - 1) {
+        if ((activeIndex + 1) > quotes.length-1) {
+            setActiveIndex(0);
+        } else {
             setActiveIndex(activeIndex + 1);
         }
     }
 
     return (
-        <div className="FavouriteQuotes">
-            <Quote index={activeIndex}></Quote>
-            <button onClick={handlePrevClick}>Prev</button>
-            <button onClick={handleNextClick}>Next</button>
-        </div>
-    )
+        <Stack >
+            <Grid item xs={6} sm={12} className="FavouriteQuotes">
+                <Quote index={activeIndex}></Quote>
+            </Grid>
+            <Grid item xs={6} className="Navigate">
+                    <Button onClick={handlePrevClick} color="secondary" size="medium">Prev</Button>
+                    <Button onClick={handleNextClick} color="secondary" size="medium">Next</Button>
+            </Grid>
+        </Stack>
+    );
 };
+
+export default FavouriteQuotes;
