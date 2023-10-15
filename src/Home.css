@@ -4,8 +4,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  height: 15%;
-  width: 20%;
+  width: auto;
+  height: auto;
   border: 10px solid transparent;
   border-image: linear-gradient(to bottom, #FAF9F6, transparent);
   border-image-slice: 1;
