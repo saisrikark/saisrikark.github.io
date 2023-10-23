@@ -24,15 +24,13 @@ function App() {
   useEffect(() => {
     let mode: string | null = localStorage.getItem("is-dark-mode-set")
     switch (mode) {
-      case "false":
+      case "true":
         setNonActiveMode("☀️");
         document.body.classList.add('dark');
-        localStorage.setItem('is-dark-mode-set', "true");
         break;
       default:
         setNonActiveMode("🌑");
         document.body.classList.remove('dark');
-        localStorage.setItem('is-dark-mode-set', "false");
     }
   }, []);
 
