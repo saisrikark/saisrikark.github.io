@@ -1,13 +1,12 @@
 body {
-    background-color: rgb(241, 241, 241);
-    transition: background-color 1000ms ease-in;
+    background-color: #F5F5F5;
     margin:0px;
     height:100%;
 }
 
 body.dark {
+    color: white;
     background-color: rgb(51, 51, 51);
-    transition: background-color 1000ms ease-in;
     margin:0px;
     height:100%;
 }
@@ -18,7 +17,6 @@ body.dark {
     justify-content: space-between;
     align-items: center;
     background-color: #333;
-    color: white;
     padding: 10px;
 }
   
@@ -40,5 +38,4 @@ body.dark {
 .left-elements a,
 .right-elements a {
     text-decoration: none;
-    color: white;
 }

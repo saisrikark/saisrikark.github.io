@@ -8,14 +8,6 @@ import Stack from '@mui/material/Stack';
 const quotes = [
     <div>
         <p>
-            ॐ भद्रं नो अपिवातय मनः <br></br>
-            O Mind! May you bring about auspiciousness for us. <br></br>
-            <br></br>
-            - Ṛgveda-X.20.1 
-        </p> 
-    </div>,
-    <div>
-        <p>
             We are what our thoughts have made us. <br></br>
             So take care about what you think. <br></br>
             Words are secondary. <br></br>
@@ -40,21 +32,6 @@ const quotes = [
     </div>,
     <div>
         <p>
-            Easy choices, hard life. <br></br>
-            Hard choices, easy life. <br></br>
-            <br></br>
-            - Jerzy Gregorek
-        </p> 
-    </div>,
-    <div>
-        <p>
-            Focus is a matter of deciding what things you're not going to do. <br></br>
-            <br></br>
-            - John Carmack
-        </p> 
-    </div>,
-    <div>
-        <p>
         Focused, hard work is the real key to success. <br></br>
         Keep your eyes on the goal, and just keep taking the next step towards completing it. <br></br>
         If you aren't sure which way to do something, do it both ways and see which works better. <br></br>
@@ -68,14 +45,7 @@ const quotes = [
         <br></br>
         -  Friedrich Nietzsche 
         </p> 
-    </div>,
-    <div>
-        <p>
-        That which does not kill us makes us stronger. <br></br>
-        <br></br>
-        -  Friedrich Nietzsche 
-        </p> 
-    </div>,
+    </div>
 ]
 
 function Quote(props: {index: number}): React.ReactElement {
@@ -102,13 +72,13 @@ function FavouriteQuotes() {
     }
 
     return (
-        <Stack >
+        <Stack>
             <Grid item xs={6} sm={12} className="FavouriteQuotes">
                 <Quote index={activeIndex}></Quote>
             </Grid>
             <Grid item xs={6} className="Navigate">
-                    <Button onClick={handlePrevClick} color="secondary" size="medium">Prev</Button>
-                    <Button onClick={handleNextClick} color="secondary" size="medium">Next</Button>
+                    <Button onClick={handlePrevClick} color="primary" size="medium">Prev</Button>
+                    <Button onClick={handleNextClick} color="primary" size="medium">Next</Button>
             </Grid>
         </Stack>
     );
