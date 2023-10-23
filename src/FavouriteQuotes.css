@@ -6,12 +6,8 @@
   text-align: center;
   min-width: 40%;
   width: auto;
+  height: auto;
   min-height: 30%;
-  background-color: #FAF9F6;
-  border: 10px solid transparent;
-  border-image: linear-gradient(to bottom, #FAF9F6, transparent);
-  border-image-slice: 1;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for depth */
 }
 
 .Navigate {
