@@ -8,26 +8,9 @@ import Stack from '@mui/material/Stack';
 const quotes = [
     <div>
         <p>
-            We are what our thoughts have made us. <br></br>
-            So take care about what you think. <br></br>
-            Words are secondary. <br></br>
-            Thoughts live; they travel far. <br></br>
-            <br></br>
-            - Swami Vivekananda
-        </p> 
-    </div>,
-    <div>
-        <p>
             The world is the great gymnasium where we come to make ourselves strong. <br></br>
             <br></br>
             - Swami Vivekananda
-        </p> 
-    </div>,
-    <div>
-        <p>
-            We suffer more in imagination than in reality. <br></br>
-            <br></br>
-            - Seneca
         </p> 
     </div>,
     <div>

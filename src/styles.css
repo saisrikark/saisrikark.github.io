@@ -5,7 +5,7 @@ body {
 }
 
 body.dark {
-    color: white;
+    color: #EDEADE;
     background-color: rgb(51, 51, 51);
     margin:0px;
     height:100%;
@@ -40,6 +40,12 @@ body.dark {
     text-decoration: none;
 }
 
-h1 {
-    /* font-family: "Arial, serif"; */
+ul {
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
+}
+
+p {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
