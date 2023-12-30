@@ -6,6 +6,7 @@ import Stack from '@mui/material/Stack';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Intro = () => {
     return (
@@ -63,6 +64,7 @@ const Home = () => {
                     >
                     <Link target="_blank" rel="noopener noreferrer" href="https://in.linkedin.com/in/srikar-k" underline="none"><LinkedInIcon color="primary"></LinkedInIcon></Link>
                     <Link target="_blank" rel="noopener noreferrer" href="https://github.com/saisrikark" underline="none"><GitHubIcon color="action"></GitHubIcon></Link>
+                    <Link target="_blank" rel="noopener noreferrer" href="https://twitter.com/sai_srikar_k" underline="none"><TwitterIcon color="primary"></TwitterIcon></Link>
                 </Box>
             </div>
             <Intro></Intro>
