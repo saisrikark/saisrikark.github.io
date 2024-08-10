@@ -1,4 +1,4 @@
-import "./Home.css"
+import "./About.css"
 
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
@@ -6,7 +6,7 @@ import Stack from '@mui/material/Stack';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import XIcon from '@mui/icons-material/X';
 
 const Intro = () => {
     return (
@@ -26,8 +26,7 @@ const Intro = () => {
                     <p>
                         I'm a software engineer specializing in backend development and scaling distributed systems. <br></br> <br></br>
 
-                        These days, apart from my work, I've been experimenting with frontend development to challenge myself. <br></br>
-                        Might move onto AI once I get a feel of frontend development :) <br></br> <br></br>
+                        These days, apart from my work, I've been experimenting with frontend development to challenge myself. <br></br> <br></br>
 
                         If you have a problem to tackle and feel I might be interested, do reach out.
                     </p>
@@ -47,9 +46,9 @@ const Intro = () => {
     )
 }
 
-const Home = () => {
+const About = () => {
     return (
-        <Stack className="Home" spacing={4}>
+        <Stack className="About" spacing={4}>
             <div>
                 <h1>Sai Srikar Komaravolu</h1>
                 <Box
@@ -62,9 +61,9 @@ const Home = () => {
                         },
                     }}
                     >
+                    <Link target="_blank" rel="noopener noreferrer" href="https://github.com/saisrikark" underline="none"><GitHubIcon style={{ color: 'black' }} ></GitHubIcon></Link>
                     <Link target="_blank" rel="noopener noreferrer" href="https://in.linkedin.com/in/srikar-k" underline="none"><LinkedInIcon color="primary"></LinkedInIcon></Link>
-                    <Link target="_blank" rel="noopener noreferrer" href="https://github.com/saisrikark" underline="none"><GitHubIcon color="action"></GitHubIcon></Link>
-                    <Link target="_blank" rel="noopener noreferrer" href="https://twitter.com/sai_srikar_k" underline="none"><TwitterIcon color="primary"></TwitterIcon></Link>
+                    <Link target="_blank" rel="noopener noreferrer" href="https://twitter.com/sai_srikar_k" underline="none"><XIcon style={{ color: 'black' }} ></XIcon></Link>
                 </Box>
             </div>
             <Intro></Intro>
@@ -92,4 +91,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default About;

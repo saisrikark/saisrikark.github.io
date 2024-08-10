@@ -1,0 +1,22 @@
+.About {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: auto;
+    max-height: 50%;
+    min-width: 30%;
+    max-width: 100%;
+}
+  
+.Text {
+    word-wrap: break-word;
+    text-align: left;
+    display: flex;  
+    flex-wrap: wrap;
+}
+  
+.Ending {
+    font-style: italic;
+}

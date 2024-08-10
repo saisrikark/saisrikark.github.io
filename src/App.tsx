@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
-import Home from './Home';
 import './styles.css';
-import FavouriteQuotes from './FavouriteQuotes';
+import About from './About';
+import Portfolio from './Portfolio';
 
 function App() {
-  const [activeComponent, setActiveComponent] = useState(Home);
+  const [activeComponent, setActiveComponent] = useState(About);
   const [nonActiveMode, setNonActiveMode] = useState("🌑");
 
   const handleDarkModeOnclick = () => {
@@ -40,8 +40,8 @@ function App() {
       <nav className="navbar">
         <div className="left-elements">
           <ButtonGroup variant="outlined" aria-label="outlined primary button group">
-            <Button onClick={() => setActiveComponent(() => <Home />)}>🏠</Button>
-            <Button onClick={() => setActiveComponent(() => <FavouriteQuotes />)}>FavQuotes</Button>
+            <Button onClick={() => setActiveComponent(() => <About />)}>About</Button>
+            <Button onClick={() => setActiveComponent(() => <Portfolio />)}>Portfolio</Button>
           </ButtonGroup>
         </div>
         <div className="right-elements">
@@ -55,6 +55,7 @@ function App() {
       </div>
     </div>
   );
+
 }
 
 export default App;
