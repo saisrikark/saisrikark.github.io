@@ -1,7 +1,8 @@
+import './styles.css';
 import { useEffect, useState } from 'react';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
-import './styles.css';
+import Stack from '@mui/material/Stack';
 import About from './About';
 import Portfolio from './Portfolio';
 
@@ -37,22 +38,24 @@ function App() {
   return (
 
     <div className="App">
-      <nav className="navbar">
-        <div className="left-elements">
-          <ButtonGroup variant="outlined" aria-label="outlined primary button group">
-            <Button onClick={() => setActiveComponent(() => <About />)}>About</Button>
-            <Button onClick={() => setActiveComponent(() => <Portfolio />)}>Portfolio</Button>
-          </ButtonGroup>
+      <Stack spacing={3}>
+        <nav className="navbar">
+          <div className="left-elements">
+            <ButtonGroup variant="outlined" aria-label="outlined primary button group">
+              <Button onClick={() => setActiveComponent(() => <About />)}>About</Button>
+              <Button onClick={() => setActiveComponent(() => <Portfolio />)}>Portfolio</Button>
+            </ButtonGroup>
+          </div>
+          <div className="right-elements">
+            <ButtonGroup variant="outlined" aria-label="outlined primary button group">
+              <Button onClick={() => handleDarkModeOnclick()}>{nonActiveMode}</Button>
+            </ButtonGroup>
+          </div>
+        </nav>
+        <div className='activeComponent'>
+          {activeComponent}
         </div>
-        <div className="right-elements">
-          <ButtonGroup variant="outlined" aria-label="outlined primary button group">
-            <Button onClick={() => handleDarkModeOnclick()}>{nonActiveMode}</Button>
-          </ButtonGroup>
-        </div>
-      </nav>
-      <div className='activeComponent'>
-        {activeComponent}
-      </div>
+      </Stack>
     </div>
   );
 
